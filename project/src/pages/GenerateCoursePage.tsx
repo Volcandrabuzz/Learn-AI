@@ -12,7 +12,7 @@ const GenerateCoursePage: React.FC = () => {
   const { setCourse } = useCourse();
   const navigate = useNavigate();
 
-  const GEMINI_API_KEY = import.meta.env.GEMINI_API_KEY;
+  const GEMINI_API_KEY = import.meta.env.VITE_GEMINI_API_KEY;
   const GEMINI_API_URL = 'https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent';
 
   const generateCourseWithGemini = async (topic: string, subtopics: string[]) => {
